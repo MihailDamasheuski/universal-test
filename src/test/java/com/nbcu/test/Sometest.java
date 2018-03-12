@@ -1,21 +1,13 @@
 package com.nbcu.test;
 
-import com.google.inject.*;
-import com.google.inject.name.Named;
-import com.google.inject.name.Names;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import utils.mongo.MongoUtils;
 
 public class Sometest {
-    @Inject
-    @Named("Adapter.Url")
-    private String host;
-
-    public String getHost() {
-        return host;
-    }
-
     public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        MongoUtils utils = context.getBean("mongoUtils", MongoUtils.class);
+
     }
 }

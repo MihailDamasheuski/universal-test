@@ -15,7 +15,7 @@ ext {
     MongoJavaDriverVersion = "3.6.0"
     SplunkVersion = "1.6.3.0"
     JsonAssertVersion = "1.5.0"
-    SpringContextVersion = "5.0.2.RELEASE"
+    SpringContextVersion = "5.0.4.RELEASE"
 }
 
 repositories {
@@ -26,4 +26,10 @@ dependencies {
     testCompile group: 'org.testng', name: 'testng', version: "${TestNGVersion}"
     compile "com.google.code.gson:gson:${GsonVersion}"
     compile group: 'com.google.inject', name: 'guice', version: "${GuiceVersion}"
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: "${CommonsLang3Version}"
+    compile group: 'org.apache.commons', name: 'commons-text', version: "${CommonsTextVersion}"
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: "${MongoJavaDriverVersion}"
+    compile group: 'com.splunk', name: 'splunk', version: "${SplunkVersion}"
+    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: "${JsonAssertVersion}"
+    compile group: 'org.springframework', name: 'spring-context', version: "${SpringContextVersion}"
 }

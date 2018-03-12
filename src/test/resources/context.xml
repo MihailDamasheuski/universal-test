@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean
+            class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+
+        <property name="location">
+            <value>classpath:${env:local}.properties</value>
+        </property>
+    </bean>
+
+    <bean id = "mongoUtils" class = "utils.mongo.MongoUtils" scope="singleton">
+        <constructor-arg name="service" ref="mongoService"/>
+    </bean>
+
+    <bean id = "mongoService" class = "service.mongo.MongoService">
+        <constructor-arg name="databaseName" value="${DB.Name}"/>
+        <constructor-arg name="userName" value="${DB.User}"/>
+        <constructor-arg name="userPassword" value="${DB.Password}"/>
+        <constructor-arg name="databaseAddress" value="${DB.Host}"/>
+        <constructor-arg name="databasePort" value="${DB.Port}"/>
+    </bean>
+
+</beans>
