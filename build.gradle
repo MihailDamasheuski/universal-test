@@ -1,0 +1,29 @@
+group 'universal-test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+ext {
+    TestNGVersion = "6.13.1"
+    GsonVersion = "2.8.2"
+    GuiceVersion = "4.2.0"
+
+    CommonsLang3Version = "3.7"
+    CommonsTextVersion = "1.1"
+    MongoJavaDriverVersion = "3.6.0"
+    SplunkVersion = "1.6.3.0"
+    JsonAssertVersion = "1.5.0"
+    SpringContextVersion = "5.0.2.RELEASE"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: "${TestNGVersion}"
+    compile "com.google.code.gson:gson:${GsonVersion}"
+    compile group: 'com.google.inject', name: 'guice', version: "${GuiceVersion}"
+}
