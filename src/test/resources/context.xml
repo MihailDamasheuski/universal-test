@@ -5,15 +5,13 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean
-            class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location">
             <value>classpath:${env:local}.properties</value>
         </property>
     </bean>
 
-    <bean id = "mongoUtils" class = "utils.mongo.MongoUtils" scope="singleton">
+    <bean id = "mongoUtils" class = "utils.mongo.MongoUtils" scope = "singleton">
         <constructor-arg name="service" ref="mongoService"/>
     </bean>
 
@@ -23,6 +21,19 @@
         <constructor-arg name="userPassword" value="${DB.Password}"/>
         <constructor-arg name="databaseAddress" value="${DB.Host}"/>
         <constructor-arg name="databasePort" value="${DB.Port}"/>
+    </bean>
+
+    <bean id = "splunk" class = "utils.splunk.SplunkUtils" scope = "singleton">
+        <constructor-arg name="service" ref="splunkService"/>
+        <constructor-arg name="index" value="${Splunk.Index}"/>
+        <constructor-arg name="source" value="${Splunk.Source}"/>
+    </bean >
+
+    <bean id = "splunkService" class = "service.splunk.SplunkService">
+        <constructor-arg name="splunkHost" value="${Splunk.Host}"/>
+        <constructor-arg name="splunkPort" value="${Splunk.Port}"/>
+        <constructor-arg name="splunkUsername" value="${Splunk.User}"/>
+        <constructor-arg name="splunkPassword" value="${Splunk.Password}"/>
     </bean>
 
 </beans>

@@ -9,7 +9,6 @@ ext {
     TestNGVersion = "6.13.1"
     GsonVersion = "2.8.2"
     GuiceVersion = "4.2.0"
-
     CommonsLang3Version = "3.7"
     CommonsTextVersion = "1.1"
     MongoJavaDriverVersion = "3.6.0"
@@ -20,16 +19,22 @@ ext {
 
 repositories {
     mavenCentral()
+    maven {
+        name "Splunk Releases"
+        url "http://splunk.artifactoryonline.com/splunk/ext-releases-local"
+    }
 }
 
 dependencies {
     testCompile group: 'org.testng', name: 'testng', version: "${TestNGVersion}"
     compile "com.google.code.gson:gson:${GsonVersion}"
     compile group: 'com.google.inject', name: 'guice', version: "${GuiceVersion}"
+//    compile group: 'com.splunk', name: 'splunk', version: "${SplunkVersion}"
+    compile group: 'com.splunk', name: 'splunk', version: '1.6.3.0'
+
     compile group: 'org.apache.commons', name: 'commons-lang3', version: "${CommonsLang3Version}"
     compile group: 'org.apache.commons', name: 'commons-text', version: "${CommonsTextVersion}"
     compile group: 'org.mongodb', name: 'mongo-java-driver', version: "${MongoJavaDriverVersion}"
-    compile group: 'com.splunk', name: 'splunk', version: "${SplunkVersion}"
     testCompile group: 'org.skyscreamer', name: 'jsonassert', version: "${JsonAssertVersion}"
     compile group: 'org.springframework', name: 'spring-context', version: "${SpringContextVersion}"
 }

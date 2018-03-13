@@ -7,6 +7,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import org.bson.Document;
+import utils.mongo.MongoCollections;
 
 import java.lang.reflect.Type;
 import java.text.DateFormat;
@@ -140,8 +141,7 @@ public class MongoService {
     }
 
     private String getCollectionName(String guid) {
-//            return TypeAbbrevToCollectionMapping.collection(guid.substring(2, 4));
-        return guid;
+            return MongoCollections.getCollectionByGuid(guid);
     }
 
     public void closeConnection() {
