@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="142e543e-c68b-47bd-868e-c825f426be5d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/splunk/SplunkService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/splunk/SplunkServiceOld.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/mongo/MongoCollections.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/splunk/SearchQueryBuilder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkArgsBuilder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkFields.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_splunk_splunk_1_6_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_splunk_splunk_1_6_3_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/universal-test_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/universal-test_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/universal-test_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/universal-test_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utils/config/ConfigReader.class" afterPath="$PROJECT_DIR$/out/production/classes/utils/config/ConfigReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/utils/util.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/nbcu/test/Sometest.class" afterPath="$PROJECT_DIR$/out/test/classes/com/nbcu/test/Sometest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/nbcu/test/asdasda.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/dev_k8s.properties" afterPath="$PROJECT_DIR$/out/test/resources/dev_k8s.properties" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/local.properties" afterPath="$PROJECT_DIR$/out/test/resources/local.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/mongo/MongoService.java" afterPath="$PROJECT_DIR$/src/main/java/service/mongo/MongoService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkUtils.java" afterPath="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkUtils.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nbcu/test/Sometest.java" afterPath="$PROJECT_DIR$/src/test/java/com/nbcu/test/Sometest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/context.xml" afterPath="$PROJECT_DIR$/src/test/resources/context.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/dev_k8s.properties" afterPath="$PROJECT_DIR$/src/test/resources/dev_k8s.properties" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" afterPath="$PROJECT_DIR$/src/test/resources/local.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java" afterPath="$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -97,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventFields.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EventFields.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="30" />
+            <state relative-caret-position="1044">
+              <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -177,7 +153,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MongoService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/mongo/MongoService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
@@ -539,7 +515,6 @@
         <option value="$PROJECT_DIR$/src/main/java/service/splunk/SplunkServiceOld.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/splunk/SearchArgsBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkFields.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dev_k8s.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkArgsBuilder.java" />
@@ -548,6 +523,7 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/splunk/SplunkUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/splunk/SearchQueryBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/splunk/SplunkService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java" />
       </list>
     </option>
   </component>
@@ -977,7 +953,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520869617988</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Splunk service">
+      <created>1520956155890</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1520956155890</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1542,14 +1525,6 @@ String res = aaa.substring(25, aaa.length());
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/splunk/SplunkUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -1602,6 +1577,14 @@ String res = aaa.substring(25, aaa.length());
             <element signature="e#5421#5422#0" expanded="true" />
             <element signature="e#5490#5491#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/splunk/EventFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
